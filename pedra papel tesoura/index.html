@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+</head>
+<body>
+    <div id="container" class="container">
+        <center>
+            <h1>Pedra papel ou tesoura</h1>
+            <h3>Inisira os nomes dos jogadores 1 e 2 abaixo:</h3>
+            <input type="text" id="nick1" placeholder="Digite seu nome">
+            <br><br>
+            <input type="text" id="nick2" placeholder="Digite seu nome">
+            <br><br>
+            <button onclick="jogo()">Jogar</button>
+            <hr>
+            <h3><label id="escolha1"></h3>
+                <input type="radio" id="pedraCheck1" name="jogador1" class="check">
+                <label for="pedraCheck1">
+                    <img class="figuras" src="./img/pedra.jpg" id="pedra1">
+                </label>
+                <input type="radio" id="papelCheck1" name="jogador1" class="check">
+                <label for="papelCheck1">
+                    <img class="figuras" src="./img/papel.jpg" id="papel1">
+                </label>
+                <input type="radio" id="tesouraCheck1" name="jogador1" class="check">
+                <label for="tesouraCheck1">
+                    <img class="figuras" src="./img/tesoura.jpg" id="tesoura1">
+                </label>
+            <hr>       
+            <h3><label id="escolha2"></h3>
+                <input type="radio" id="pedraCheck2" name="jogador2" class="check">
+                <label for="pedraCheck2">
+                    <img class="figuras" src="./img/pedra.jpg" id="pedra2">
+                </label>
+                <input type="radio" id="papelCheck2" name="jogador2" class="check">
+                <label for="papelCheck2">
+                    <img class="figuras" src="./img/papel.jpg" id="papel2">
+                </label>
+                <input type="radio" id="tesouraCheck2" name="jogador2" class="check">
+                <label for="tesouraCheck2">
+                    <img class="figuras" src="./img/tesoura.jpg" id="tesoura2">
+                </label>
+            <hr>
+            <button onclick="verificar()">Verificar</button>  
+            <hr>
+            <label id="result"></label>
+            <h3><label id="contagem1"></label></h3>
+            <h3><label id="contagem2"></label></h3>
+            <h1><label id="resultFinal"></label></h1>
+        </center>
+    </div>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Polo</title>
+</head>
+<body>
+    <center>
+        <h1>Marco polo</h1>
+            <h2>Clique no botão de sorteio para criar um número aleatório entre 0 e 20 e tente acertar.</h2>
+            <button id="bRandomize" onclick="randomize()">Criar número</button>
+                <h3>Abaixo, escolha a sua dificuldade, dentre elas: Fácil (até 5 tentativas), normal (até 3 tentativas) e nível BloodBorne (1 tentativa).</h3>
+                    <p>Escolha a dificuldade:</p>
+                    <table>
+                        <tr>
+                            <td><input type="button" value="Fácil" onclick="easy()" id="bEasy"></td>
+                            <td><input type="button" value="Normal" onclick="normal()" id="bNormal"></td>
+                            <td><input type="button" value="BloodBorne" onclick="blood()" id="bBlood"></td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <table>
+                        <tr>
+                            <td><p>Escreva a tentativa:</p></td>
+                            <td><input type="text" id="userTry"></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="tryOut()">Adivinhar</button></td>
+                            <td><button onclick="restart()">Recomeçar</button></td>
+                        </tr>
+                    </table>
+    </center>
+</body>
+</html>

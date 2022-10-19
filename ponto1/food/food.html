@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="food.css" type="text/css">
+    <script src="food.js" defer></script>
+    <title>FeraFood | Menu</title>
+</head>
+<body>
+    <div class="containerMenu" id="containerMenu">
+        <h1 class="titulos">Bem vindo ao Ponto1</h1>
+            <h2 class="titulos">Menu de opções:</h2>
+                <h3 class="tiposDoCardapio">Sanduiches:</h3>
+                    <p class="itens">nº 1: Big Abraço | R$8,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdS1" type="text">
+                    <p class="itens">nº 2: Big Saboroso | R$7,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdS2" type="text">
+                    <p class="itens">nº 3: Big Job | R$9,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdS3" type="text">
+                <br><br><hr class=""line">
+                <h3 class="tiposDoCardapio">Salgados:</h3>
+                    <p class="itens">nº 4: Lanchão | R$6,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdSG1" type="text">
+                    <p class="itens">nº 5: Croissant | R$5,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdSG2" type="text">
+                    <p class="itens">nº 6: Coxinha de carne vegana | R$7,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdSG3" type="text">
+                <br><br><hr class=""line">
+                <h3 class="tiposDoCardapio">Doces:</h3>
+                    <p class="itens">nº 7: Nega Maluca | R$12,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdD1" type="text">
+                    <p class="itens">nº 8: Brownie | R$6,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdD2" type="text">
+                    <p class="itens">nº 9: Surpresa de Uva | R$11,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdD3" type="text">
+                <br><br><hr class=""line">
+                <h3 class="tiposDoCardapio">Bebidas:</h3>
+                    <p class="itens">nº 10: Coca-Cola Zero | R$4,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdB1" type="text">
+                    <p class="itens">nº 11: Guaraná Antártica Zero | R$4,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdB2" type="text">
+                    <p class="itens">nº 12: Água | R$2,00</p>
+                        <input placeholder="Escreva a quantidade" id="qtdB3" type="text"><br><br>
+        <button onclick="carrinho()">Ir para o carrinho</button>
+    </div>
+    <div class="containerCarrinho" id="containerCarrinho">
+        <h1 class="titulos">Carrinho de compras:</h1>
+            <h3 class="titulos">Seus itens:</h3>
+                <p class="itens">
+                    <label id="itens"></label><br>
+                </p>
+                <h2 class="titulos">
+                    <label id="valorFinal"></label>
+                </h2>
+                <h2 class="titulos">
+                    <label id="valorFinalDesconto"></label>
+                </h2>
+            <p class="itens">Insira um cupom de desconto:</p>
+            <input type="text" id="cupom" placeholder="Cupom de desconto">
+        <button onclick="cupomCalc()">Aplicar Cupom</button>
+            <br><br>
+        <button onclick="comprar()">Finalizar Compra</button>
+        <br><br>
+        <button onclick="voltarLoja()">Retornar a loja</button>
+    </div>
+    <br><br>
+    <center>
+        <div class="boleto" id="boleto">
+            <h1>Banco Peixoto</h1>
+                <h2>Fera Food</h2>
+                    <p>Nome da loja: Ponto1</p>
+                    <p>Valor total de Sanduiches: <label id="valorSanduiches"></label></p>
+                    <p>Valor total de Salgados: <label id="valorSalgados"></label></p>
+                    <p>Valor total de Doces: <label id="valorDoces"></label></p>
+                    <p>Valor total de Bebidas: <label id="valorBebidas"></label></p>
+                    <h4><p>Valor total da compra:</p><label id="valorFinalBoleto"></label></h4>
+                    <p>Validade: 07/04/2022</p>
+                    <img src="../img/codigo.png" class="codigo">
+                    <img src="../img/cesta.png" class="cesta">
+    </center>
+    </div>
+</body>
+</html>

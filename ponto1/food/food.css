@@ -1,0 +1,45 @@
+body {
+    background: #F5F6FB
+}
+
+.itens {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.boleto {
+    width: 775px;
+    height: 900px;
+    display: flex;
+    align-items: center;    /*Alinha na vertical*/
+    flex-direction: column; /*Define como será distribuido os elemento na horizontal*/
+    background-color: white; /*Cor da folha A4*/
+    border: 1px solid rgb(209, 209, 209); /*Colocando a borda fina*/
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 10px; /*Criando o efeito de sombra da folha*/
+    font-family: Arial, Helvetica, sans-serif; /*Tipo de fonte*/
+}
+
+.codigo {
+    width: 240px;
+}
+
+.cesta {
+    width: 190px;
+}
+
+.containerCarrinho {
+    opacity: 0%;
+}
+
+.boleto {
+    opacity: 0%;
+}
+
+.tiposDoCardapio {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulos {
+    font-family: Arial, Helvetica, sans-serif;
+}

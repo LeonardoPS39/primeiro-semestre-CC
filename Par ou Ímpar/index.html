@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de par ou ímpar</title>
+</head>
+<body>
+
+                    <!-- Pagina inicial para inserir Nickname -->
+
+    <div id="container">
+        <h1>Par ou ímpar</h1>
+        <div id="login" class="nickname">
+            <h3>Jogador 1, insira seu nickname:</h3>
+            <input type="text" autofocus id="nick1" placeholder="Nickname">
+            <h3>Jogador 2, insira seu nickname:</h3>
+            <input type="text" id="nick2" placeholder="Nickname">
+            <br>
+            <br>
+            <button onclick="iniciarJogo()">Começar</button>
+        </div>
+    </div>
+
+                    <!-- Parte de jogar o jogo -->
+
+    <div style="opacity: 0;" id="container2">
+        <h1>Par ou ímpar</h1>
+        <label id="nickParImpar1" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;"></label>
+        <br>
+        <br>
+        <input type="text" id="selecao1" placeholder="Par ou Impar" style="width: 180px;">
+        <br>
+        <br>
+        <label id="nickParImpar2" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;"></label>
+        <br>
+        <br>
+        <input type="text" id="selecao2" placeholder="Par ou Impar" style="width: 180px;">
+        <br>
+        <br>
+        <hr>
+        <label id="nickJogo1" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;"></label>
+        <br>
+        <br>
+        <input type="text" id="jogada1" placeholder="Insira o número par ou ímpar" style="width: 180px;">
+        <br>
+        <br>
+        <label id="nickJogo2" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;"></label>
+        <br>
+        <br>
+        <input type="text" id="jogada2" placeholder="Insira o número par ou ímpar" style="width: 180px;">
+        <br>
+        <br>
+        <button onclick="jogando()">Jogar</button>
+        <br>
+        <br>
+        <label id="resultado" style="font-size: 15px; font-family: Arial, Helvetica, sans-serif;">O resultado foi</label>
+        <br>
+        <br>
+        <label id="contador1" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;"></label>
+        <br>
+        <label id="contador2" style="font-size: 25px; font-family: Arial, Helvetica, sans-serif;"></label>
+        <br>
+        <br>
+        <label id="ganhador"></label>
+    </div>
+
+                    <!-- Resultado final -->
+
+    <div id="final">
+        <h1 id="textoVencedor"></h1>
+        <img src="vencedor.png" style="display: none; width: 300px;" id="vencedor">
+        <script src="main.js"></script>
+        <form>
+            <a href="index.html">
+                <input id="finalForm" style="display: none;" type="button" value="Recomeçar">
+            </a>
+        </form>
+    </div>
+</body>
+</html>
